@@ -4,15 +4,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './Components/NavBar/NavBar';
 import SideBar from './Components/SideBar/SideBar';
 import Summary from './Components/Summary/Summary';
+import Project from './Components/Project/Project';
+import CreatePro from './Components/CreatePro/CreatePro';
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      {/* <SideBar  /> */}
-      <Summary />
-      {/* <Container  /> */}
-      {/* <Main /> */}
+      <SideBar  />
+      {/* <Summary /> */}
+      <Project />
+      <CreatePro />
       
     </div>
   );

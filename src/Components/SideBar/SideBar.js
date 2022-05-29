@@ -9,7 +9,7 @@ function SideBar() {
 
     
   return (
-    <div className='success sidebar '   >
+    <div className='success sidebar col-2 ' fluid style={{float:"left"}} >
    
      
         <div>

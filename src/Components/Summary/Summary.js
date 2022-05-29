@@ -8,12 +8,9 @@ function Summary() {
   const [col, setColor] = useState(true)
 
   return (
-    <Container fluid>
+    <Container fluid style={{float:"left"}} className="col-10">
       <Row bg="light"  >
-        <Col className='col-2' >
-       <SideBar/>
-        </Col> 
-      
+        
         <Col   >
         <div><h4>Summary</h4></div>
         <div  className='row2 ' >

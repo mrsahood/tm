@@ -1,0 +1,62 @@
+  
+body{
+    background-color: rgb(248, 247, 255);
+
+}
+.pro-button{
+    border-radius: 0;
+}
+.pro-alert{
+    font-weight: 500;
+    margin-top: 3px;
+    margin-left: 135px;
+}
+.proj-alert{
+    margin-left: 19vh;
+    margin-top: -10px;
+}
+
+.pro-alet1{
+    margin-top: -26px;
+    padding-top: -22px;
+    padding-bottom: 32px;
+}
+.pr-due{
+    color: grey;
+    margin-top: -9px;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+.container1{
+    width: 380px;
+    min-height: 250px;
+    background-color: #fff;
+    float: left;
+    border: 1px solid;
+   border-color: rgb(211, 208, 208);
+   float: left;
+   margin-left: 3vh;
+}
+.icon-plus{
+    float: left;
+    padding-left: 4px;
+    font-size: 26px;
+}
+.add-icon-txt{
+    float: left;
+    padding-left: 6px;
+    font-weight: 500;
+}
+.add-tasak progress{
+    margin-top: 10px;
+    height: 5px;
+    width: 100%;
+    margin-top: -28px;
+ }

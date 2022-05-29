@@ -110,7 +110,7 @@
 
 
 
-.progress{
+.row2 progress{
    margin-top: 10px;
    height: 8px;
    width: 93%;
@@ -155,4 +155,8 @@
 
 .container{
    padding: 40px;
+}
+
+.create-btn{
+   float: right;
 }
