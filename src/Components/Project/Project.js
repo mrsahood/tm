@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Button, Col, Navbar, Card, Dropdown, Row, Container, Alert,ProgressBar } from 'react-bootstrap';
+import CreatePro from '../CreatePro/CreatePro';
 import SideBar from '../SideBar/SideBar';
 import './Project.css'
 
 function Project() {
+    const [container, setContainer] = useState(false)
+    const [footer, setFooter] = useState(false)
+
     return (
         <div fluid style={{ float: "left" }} className="col-10">
             <Container fluid>
@@ -28,7 +32,7 @@ function Project() {
 
                    
                         <div className="container1 rounded">
-                            <div className="pr-info">
+                            <div className="pr-info" onClick={() => setContainer(!container)}>
                                 <div className='d-flex'>
                                     <p className='p-3' >Project  Name</p>
                                     <div className='ml-auto p-2 '  ><Alert className='pro-alert'style={{ fontWeight: "500" }} >Admin</Alert></div>
@@ -41,7 +45,7 @@ function Project() {
                                     <p style={{ color: "blue", marginTop: "-20px", fontWeight: "600" }} >26 March 2022</p>
                                 </div>
                             </div>
-                            <div className="pr-info">
+                            <div className="pr-info" onClick={() => setFooter(!footer)} >
                                 <div className='d-flex'>
                                     <p className='p-3' style={{ fontWeight: "500",marginTop:"-15px" }}>Status</p>
                                     <div className='ml-auto p-2 '  ><Alert className='proj-alert' >In Progress &nbsp; <i class="fa fa-caret-down"></i></Alert></div>
@@ -58,14 +62,16 @@ function Project() {
                                 
                                 
                             </div >
+                            <div className="bbar">
                             <p style={{float:"left",marginLeft:"8px",marginTop:"-5px",position:"absolute"}} >Progress</p> <span style={{float:"right",color:"grey"}} >75%</span> <br />
                                 <ProgressBar variant="primary" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"  now={75}  />
+                            </div>
                             </div>
                             
                         </div>
                         
-                        <div className="container1 rounded">
-                            <div className="pr-info">
+                        <div className="container1 rounded" onClick={() => setContainer(!container)}>
+                            <div className="pr-info" onClick={() => setFooter(!footer)}>
                                 <div className='d-flex'>
                                     <p className='p-3' >Project  Name</p>
                                     <div className='ml-auto p-2 '  ><Alert className='pro-alert'style={{ fontWeight: "500" }} >Admin</Alert></div>
@@ -78,7 +84,7 @@ function Project() {
                                     <p style={{ color: "blue", marginTop: "-20px", fontWeight: "600" }} >26 March 2022</p>
                                 </div>
                             </div>
-                            <div className="pr-info">
+                            <div className="pr-info" onClick={() => setFooter(!footer)}>
                                 <div className='d-flex'>
                                     <p className='p-3' style={{ fontWeight: "500",marginTop:"-15px" }}>Status</p>
                                     <div className='ml-auto p-2 '  ><Alert className='proj-alert' >In Progress &nbsp; <i class="fa fa-caret-down"></i></Alert></div>
@@ -95,8 +101,10 @@ function Project() {
                                 
                                 
                             </div >
+                            <div className="bbar">
                             <p style={{float:"left",marginLeft:"8px",marginTop:"-5px",position:"absolute"}} >Progress</p> <span style={{float:"right",color:"grey"}} >75%</span> <br />
                                 <ProgressBar variant="primary" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"  now={75}  />
+                            </div>
                             </div>
                             
                         </div>
@@ -104,6 +112,8 @@ function Project() {
                     
                 </Row>
             </Container>
+
+          { container ? <CreatePro data={setContainer} /> : "" }
         </div>
     )
 }

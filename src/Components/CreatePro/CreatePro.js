@@ -2,7 +2,10 @@ import { Alert, Button, ButtonGroup, DropdownButton, Dropdown, ProgressBar } fro
 import React from 'react'
 import './CreatePro.css'
 
-function CreatePro() {
+function CreatePro(props) {
+    const changeState = () => {
+        console.log(props.data());
+    }
     return (
         <div className='pop_back' >
             <div className='pop' >
@@ -82,7 +85,7 @@ function CreatePro() {
 
                 <div className="project-progress">
                     <div className="status-inprogress">
-                        <span>Status</span> <br />
+                        <span>Status</span> <br /> <i class="fa-solid fa-xmark mr-auto close-button " onClick={changeState}  ></i>
                         <DropdownButton id="dropdown-item-button" variant='primary' title="Newest First">
                             <Dropdown.ItemText>Newest First</Dropdown.ItemText>
                             <Dropdown.Item as="button">Action</Dropdown.Item>
@@ -122,7 +125,7 @@ function CreatePro() {
 
                         </div>
                     </div>
-                    <Button style={{float:"right",margin:"3px"}} variant='primary' >Save</Button>
+                    <Button style={{float:"right",margin:"3px",marginRight:"40px"}} variant='primary' onClick={changeState} >Save</Button>
                 </div>
             </div>
         </div>

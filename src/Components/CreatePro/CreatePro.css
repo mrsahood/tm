@@ -231,3 +231,10 @@
     margin-right:auto;
     width:960px;
 }
+
+.close-button{
+    margin: 5px;
+    margin-top: -20px;
+    font-size: 25px;
+    float: right;
+}

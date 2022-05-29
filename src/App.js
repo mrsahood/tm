@@ -6,6 +6,7 @@ import SideBar from './Components/SideBar/SideBar';
 import Summary from './Components/Summary/Summary';
 import Project from './Components/Project/Project';
 import CreatePro from './Components/CreatePro/CreatePro';
+import ProTask from './Components/ProTasks/ProTask';
 
 function App() {
   return (
@@ -13,8 +14,8 @@ function App() {
       <NavBar />
       <SideBar  />
       {/* <Summary /> */}
-      <Project />
-      <CreatePro />
+      {/* <Project /> */}
+      <ProTask />
       
     </div>
   );

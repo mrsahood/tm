@@ -1,0 +1,84 @@
+
+
+
+.intro-drop{
+    border-radius: 0%;
+    background-color: #fff;
+    border: 1px solid rgb(211, 209, 209);
+
+}
+
+/* rgb(211, 209, 209) */
+
+#name-pro{
+    color: gray;
+    float: left;
+    margin: 10px;
+    margin-left: 30px;
+}
+.intro-pro{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.twin-button-pro{
+    border: 1px solid rgb(211, 209, 209);
+    background-color: #fff;
+
+}
+.card-pro-green{
+    height: 80px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid rgb(211, 209, 209);
+    border-left: 5px solid green ;
+    margin: 5px;
+}
+.card-pro-red{
+    height: 80px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid rgb(211, 209, 209);
+    border-left: 5px solid red ;
+    margin: 5px;
+}
+.card-pro-yellow{
+    height: 80px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid rgb(211, 209, 209);
+    border-left: 5px solid yellow ;
+    margin: 5px;
+}
+#task-title{
+    float: left;
+    margin: 12px;
+
+}
+#due-date{
+    float: left;
+    /* margin: -13px; */
+    margin-left: 16px;
+    font-weight: 400;
+    color: gray;
+    /* margin-bottom: 72px; */
+    margin-top: -10px;
+}
+#p2-project{
+    font-family: italic;
+    margin-top: 11px;
+}
+.right-project-1{
+    color: blue;
+    margin-right: 10px;
+    margin-top: -12px;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.project-task-3bar .progress{
+    height: 4px;
+    margin-left: 8px;
+    width: 99%;
+    margin-top: -10px;
+}

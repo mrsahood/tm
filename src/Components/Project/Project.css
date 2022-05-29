@@ -54,9 +54,17 @@ body{
     padding-left: 6px;
     font-weight: 500;
 }
-.add-tasak progress{
+.bbar .progress{
     margin-top: 10px;
     height: 5px;
     width: 100%;
     margin-top: -28px;
+ }
+
+ .pr-info:hover{
+     background-color: rgb(211, 209, 209);
+ }
+ .border-top:hover{
+    background-color: rgb(211, 209, 209);
+
  }
