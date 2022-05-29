@@ -7,6 +7,7 @@ import Summary from './Components/Summary/Summary';
 import Project from './Components/Project/Project';
 import CreatePro from './Components/CreatePro/CreatePro';
 import ProTask from './Components/ProTasks/ProTask';
+import ProjectTasks from './Components/ProjectTasks/ProjectTasks';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <SideBar  />
       {/* <Summary /> */}
       {/* <Project /> */}
-      <ProTask />
+      {/* <ProTask /> */}
+      <ProjectTasks />
       
     </div>
   );

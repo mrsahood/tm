@@ -1,0 +1,41 @@
+
+
+.task-table-head{
+    background-color: #fff;
+}
+body{
+    font-size: 12px;
+}
+
+th {
+    background-color: lightseagreen;
+ }
+
+ .project-table{
+    border: 1px solid rgb(195, 194, 201);
+       
+ }
+ .project-table-head{
+    border: 1px solid rgb(195, 194, 201);
+
+ }
+ .project-tasks-2 .alert{
+    width: 130px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+ }
+ 
+ .project-task-progress .progress{
+     height: 5px;
+
+ }
+
+ .project-task-progress span{
+    margin-top: 3px;
+    position: absolute;
+    font-size: 10px;
+    color: gray;
+    
+ }
