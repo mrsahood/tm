@@ -12,6 +12,7 @@
 .navname{
     border: 1px solid;
     border-color: rgb(211, 208, 208);
+
 }
 
 #pop{
@@ -28,8 +29,11 @@
 }
 
 .open-box{
-    margin: 10px;
+    /* margin: 10px; */
     font-size: 28px;
     margin-top: 16px;
+    right: 50%;
+    top: 50%;
+    float: left;
 
 }

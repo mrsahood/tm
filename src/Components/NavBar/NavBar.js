@@ -3,7 +3,7 @@ import './NavBar.css'
 import { FaBoxOpen } from "react-icons/fa";
 import { Button,Col, Navbar,Container,NavDropdown,Nav } from 'react-bootstrap';
 
-function NavBar() {
+function NavBar( props ) {
     const [pop, setPop] = useState(false)
 
     const managePOp = () => {
@@ -12,7 +12,7 @@ function NavBar() {
     }
   return (
     <div  >
-        <Navbar bg="white"  expand="lg"  className="ms-auto  navname" >
+        <Navbar bg="white"   expand="lg"  className="ms-auto  navname" >
   <Container fluid>
     <Navbar.Brand href="#home" id='tm' >tm.</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -30,10 +30,10 @@ function NavBar() {
       </Nav>
     </Navbar.Collapse>
   </Container>
-{/* { pop && <div id='pop'  >
+{ pop && <div id='pop'  >
             <FaBoxOpen className='open-box' />
             <FaBoxOpen className='open-box' />
-         </div>} */}
+         </div>}
 
 </Navbar>
     </div>

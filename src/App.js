@@ -8,16 +8,25 @@ import Project from './Components/Project/Project';
 import CreatePro from './Components/CreatePro/CreatePro';
 import ProTask from './Components/ProTasks/ProTask';
 import ProjectTasks from './Components/ProjectTasks/ProjectTasks';
+import {  useState } from 'react';
+import { SetPage } from './Components/Store'
+
 
 function App() {
+  const [col, setColor] = useState(true)
+
+  
   return (
     <div className="App">
-      <NavBar />
-      <SideBar  />
-      {/* <Summary /> */}
-      {/* <Project /> */}
+      <SetPage.Provider value={{col , setColor}} >
+      <NavBar  />
+      <SideBar data={setColor} />
+      {/* <CreatePro /> */}
+      { col ?  <Summary /> : <Project /> }
+      
       {/* <ProTask /> */}
-      <ProjectTasks />
+      {/* <ProjectTasks /> */}
+      </SetPage.Provider>
       
     </div>
   );

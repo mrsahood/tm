@@ -1,18 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./ProjectTasks.css"
-import { Button, Col, Navbar, Dropdown, DropdownButton, Row, Alert, ProgressBar, Table } from 'react-bootstrap';
+import {  Dropdown, DropdownButton, Row, Alert, ProgressBar, Table } from 'react-bootstrap';
+import CreatePro from '../CreatePro/CreatePro';
 
 
 function ProjectTasks() {
+    const [pop, setpop] = useState(false)
     return (
         <div className='col-10 fluid' style={{ float: "left" }}>
-            <button className='btn btn-success mt-4 create-btn' >Create</button>
+            <button className='btn btn-success mt-4 create-btn'onClick={() => setpop(!pop)} >Create</button>
             <div className='d-flex justify-content-start intro-pro' >
                 <h2>Project Tasks</h2>
-                <button style={{ marginLeft: "40px" }} className="twin-button-pro" ><i class="fa fa-bars-progress ml-2"></i></button>
-                <button style={{ marginRight: "40px" }} className="twin-button-pro" ><i class="fa fa-barcode"></i></button>
-                <DropdownButton id="dropdown-item-button " className='intro-drop' variant='white'
-                    title="Newest First">
+                <button style={{ marginLeft: "40px" }} className="twin-button-pro" >
+                    <i class="fa fa-bars-progress ml-2"></i></button>
+                <button style={{ marginRight: "40px" }} className="twin-button-pro" >
+                    <i class="fa fa-barcode"></i></button>
+                <DropdownButton id="dropdown-item-button " className='intro-drop' 
+                variant='white' title="Newest First">
                     <Dropdown.ItemText>Newest First</Dropdown.ItemText>
                     <Dropdown.Item as="button">Action</Dropdown.Item>
                     <Dropdown.Item as="button">Another action</Dropdown.Item>
@@ -97,6 +101,7 @@ function ProjectTasks() {
                     </tbody>
                 </Table>
             </div>
+            { pop ? <CreatePro /> : "" }
         </div>
     )
 }
